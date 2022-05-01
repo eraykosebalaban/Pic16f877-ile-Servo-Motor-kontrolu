@@ -1,0 +1,37 @@
+[PROJECT]
+Target=Pic16f877 ile Servo Motor Kontrolu.hex
+Processor_Text=PIC16F877
+CCSVersion=5.049
+Compiler=PCM
+[Target Data]
+FileList=Pic16f877 ile Servo Motor Kontrolu.c
+[Pic16f877 ile Servo Motor Kontrolu.c]
+Type=4
+[mru-list]
+1=Pic16f877 ile Servo Motor Kontrolu.c
+
+[defines]
+buildcount=2
+
+[Opened Files]
+1=Pic16f877 ile Servo Motor Kontrolu.c
+t1=13
+Count=1
+[Units]
+Count=1
+1=Pic16f877 ile Servo Motor Kontrolu (main)
+
+[ProjectLog]
+Days=2
+D1=01-05-2022
+D1_L=2
+D1_L1=[84289]Stopped Editing.
+TotalEdit=17
+TotalDebug=0
+D1_E=17
+D1_D=0
+D1_L2=[84289]Project Closed.
+D2=02-05-2022
+D2_L=2
+D2_L1=[2977]Project Opened.
+D2_L2=[2992]Project Closed.

@@ -1,0 +1,124 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+006     lcd
+006     lcdlat
+008     PSP_DATA
+015     CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01C     CCP_2_HIGH
+020-021 i
+022-023 aci
+024     lcd_init.i
+024-025 servo.b
+024-027 @SFTOI.P1
+024     MAIN.@SCRATCH1
+025-028 lcd_init.LCD_INIT_STRING
+025     MAIN.@SCRATCH2
+026     servo.c
+026-027 @ITOF.P1
+026-029 @DIVFF.P2
+027     @PRINTF_U_615.P1
+027     @PSTRINGCN7_615.P2
+027     servo.@SCRATCH1
+028     @PRINTF_U_615.P1
+028     servo.@SCRATCH2
+028     @PSTRINGCN7_615.@SCRATCH1
+029     @DIV88.P1
+029     lcd_init.@SCRATCH1
+029     servo.@SCRATCH3
+029     @PSTRINGCN7_615.@SCRATCH2
+02A     @DIV88.P1
+02A     @delay_us1.P2
+02A-02D @DIVFF.P3
+02A     @PSTRINGCN7_615.@SCRATCH3
+02B     lcd_putc.c
+02B     @PSTRINGCN7_615.@SCRATCH4
+02B     @DIV88.@SCRATCH1
+02C     lcd_gotoxy.x
+02C     @delay_ms1.P1
+02D     lcd_gotoxy.y
+02E     lcd_gotoxy.address
+02E     @DIVFF.@SCRATCH1
+02F     lcd_gotoxy.@SCRATCH1
+02F     @DIVFF.@SCRATCH2
+030     lcd_send_byte.address
+030     @DIVFF.@SCRATCH3
+031     lcd_send_byte.n
+031     @DIVFF.@SCRATCH4
+032     lcd_read_byte.low
+032     lcd_send_byte.@SCRATCH1
+032     @DIVFF.@SCRATCH5
+033     lcd_read_byte.high
+033     lcd_send_nibble.n
+033     @DIVFF.@SCRATCH6
+034     lcd_read_byte.@SCRATCH1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+086     lcdtris
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @const632.call
+00000D  @delay_ms1
+000022  lcd_send_nibble
+00002E  lcd_read_nibble
+000034  lcd_send_byte
+00003A  lcd_read_byte
+000074  lcd_init
+0000B2  @ITOF
+0000D1  @DIVFF
+00019D  @SFTOI
+0001BE  @delay_us1
+0001D2  lcd_gotoxy
+0001E4  lcd_putc
+000210  @PSTRINGCN7_615
+000267  @DIV88
+00027C  servo
+0002B8  @PRINTF_U_615
+0002F8  @cinit1
+0002F8  MAIN
+000304  @cinit2
+
+Project Directory:
+    C:\Users\Eray\Desktop\Pic168f77 Projeleri\Pic16f877 ile Servo Motor kontrolü\
+
+Project Files:
+    Pic16f877 ile Servo Motor Kontrolu.c                    [01-May-22 23:20  CRC=FCEC317C]
+    ..\..\..\..\..\Program Files (x86)\PICC\Devices\16f877.h [08-Eyl-15 15:15  CRC=143AECBE]
+    ..\..\..\..\..\Program Files (x86)\PICC\Drivers\lcd.c   [19-Eyl-13 16:38  CRC=D1A6378A]
+
+Source signature=B4738D4E
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=CD25
+
+Units:
+    Pic16f877 ile Servo Motor Kontrolu (main)
+
+Compiler Settings:
+    Processor:      PIC16F877
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   Pic16f877 ile Servo Motor Kontrolu.xsym
+    Errors:      Pic16f877 ile Servo Motor Kontrolu.err
+    Ext Symbols: Pic16f877 ile Servo Motor Kontrolu.esym
+    INHX8:       Pic16f877 ile Servo Motor Kontrolu.hex
+    Symbols:     Pic16f877 ile Servo Motor Kontrolu.sym
+    List:        Pic16f877 ile Servo Motor Kontrolu.lst
+    Debug/COFF:  Pic16f877 ile Servo Motor Kontrolu.cof
+    Project:     Pic16f877 ile Servo Motor Kontrolu.ccspjt
+    Call Tree:   Pic16f877 ile Servo Motor Kontrolu.tre
+    Statistics:  Pic16f877 ile Servo Motor Kontrolu.STA
